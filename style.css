@@ -381,3 +381,10 @@ footer ul {
     transition: background-color 0.3s ease;
     max-width: 300px; /* กำหนดความกว้างสูงสุดของปุ่ม */
 }
+/* --- ทำให้วิดีโอ (Element หรือ Embed) ตอบสนองต่อขนาดหน้าจอ --- */
+
+.responsive-video {
+    max-width: 100%; /* ทำให้วิดีโอกว้างไม่เกินความกว้างของ Parent Container */
+    height: auto;    /* ปรับความสูงอัตโนมัติเพื่อรักษาสัดส่วน */
+    display: block;  /* ป้องกันช่องว่างที่อาจเกิดขึ้น */
+}

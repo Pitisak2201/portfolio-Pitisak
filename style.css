@@ -387,4 +387,6 @@ footer ul {
     max-width: 100%; /* ทำให้วิดีโอกว้างไม่เกินความกว้างของ Parent Container */
     height: auto;    /* ปรับความสูงอัตโนมัติเพื่อรักษาสัดส่วน */
     display: block;  /* ป้องกันช่องว่างที่อาจเกิดขึ้น */
+    margin-left: auto;   
+    margin-right: auto;
 }

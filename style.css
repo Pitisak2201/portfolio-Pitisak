@@ -1,0 +1,383 @@
+/* ส่วนการตั้งค่าพื้นฐานของทั้งหน้าเว็บไซต์ (Global Settings) */
+body {
+    /* กำหนดชนิดของฟอนต์ (Font) สำหรับข้อความทั้งหมด */
+    font-family: Sriracha, sans-serif;
+    /* กำหนดระยะห่างระหว่างบรรทัดเพื่อให้อ่านง่ายขึ้น */
+    line-height: 1.6;
+    /* กำจัดขอบและระยะห่างเริ่มต้นของหน้าเว็บ */
+    margin: 0;
+    /* กำจัดระยะห่างเริ่มต้น */
+    padding: 0;
+    background-image: url('images/blackgrouw.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* ส่วนตกแต่งสำหรับส่วนหัว (Header) ของเว็บไซต์ */
+header {
+    /* กำหนดสีพื้นหลังของ Header เป็นสีเทาเข้ม */
+    background: #003C71;
+    /* กำหนดสีตัวอักษรใน Header ให้เป็นสีขาว */
+    color: #fff;
+    /* กำหนดระยะห่างภายใน (Padding) ด้านบนและล่าง */
+    padding: 1rem 0;
+    /* จัดข้อความและเนื้อหาให้อยู่ตรงกลาง */
+    text-align: center;
+}
+
+/* กำหนดรูปแบบเฉพาะสำหรับ h1 ที่อยู่ใน Header */
+header h1 {
+    /* ลบระยะห่างด้านล่างของ h1 เพื่อให้ชิดกับข้อความอื่นมากขึ้น */
+    margin-bottom: 0;
+}
+
+
+/* จัดรูปแบบกล่องข้อความเพื่อให้เนื้อหาอ่านง่ายขึ้นบนพื้นหลังที่เป็นรูปภาพ */
+.grob, .atiby {
+    /* กำหนดสีพื้นหลังให้เป็นสีขาวโปร่งใส (ความทึบ 80%) */
+    background-color: rgb(169, 209, 255,0.8);
+    /* ทำให้มุมของกรอบโค้งมน */
+    border-radius: 10px;
+    /* เพิ่มระยะห่างภายในกรอบ (ช่องไฟ) */
+    padding: 10px;
+    /* จัดกล่องให้อยู่กึ่งกลางหน้าจอและเพิ่มระยะห่างด้านบน/ล่าง */
+    margin: 20px auto;
+    /* กำหนดความกว้างสูงสุดของกล่อง */
+    max-width: 800px;
+    /* เพิ่มเงาเล็กน้อยให้กับกล่องเพื่อให้ดูมีมิติ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* จัดรูปแบบกล่องข้อความเพื่อให้เนื้อหาอ่านง่ายขึ้นบนพื้นหลังที่เป็นรูปภาพ */
+.grob1,.vidio1 h3, #projects h2,.vidio h3{
+    /* กำหนดสีพื้นหลังให้เป็นสีขาวโปร่งใส (ความทึบ 80%) */
+    background-color: rgb(169, 209, 255,0.8);
+    /* ทำให้มุมของกรอบโค้งมน */
+    border-radius: 10px;
+    /* เพิ่มระยะห่างภายในกรอบ (ช่องไฟ) */
+    padding: 10px;
+    /* จัดกล่องให้อยู่กึ่งกลางหน้าจอและเพิ่มระยะห่างด้านบน/ล่าง */
+    margin: 20px auto;
+    /* กำหนดความกว้างสูงสุดของกล่อง */
+    max-width: 350px;
+    /* เพิ่มเงาเล็กน้อยให้กับกล่องเพื่อให้ดูมีมิติ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.vidio h3{
+    margin-bottom: 1px ;
+}
+
+#projects h2{
+    margin-top: 50px;
+}
+
+    /*.atiby{
+    margin-bottom: 70px;
+}/
+
+/* จัดรูปแบบปุ่มในส่วน เมนูกด */
+ nav ul li a {
+    display: inline-block; /* ทำให้ลิงก์มีลักษณะคล้ายปุ่ม */
+    background-color: #2980b9; /* กำหนดสีพื้นหลังของปุ่ม007bff */
+    color: #fff; /* กำหนดสีตัวอักษรเป็นสีขาว */
+    padding: 5px 15px; /* กำหนดระยะห่างภายในปุ่ม */
+    border-radius: 5px; /* ทำให้มุมของปุ่มโค้งมน */
+    margin-top: 15px; /* เพิ่มระยะห่างด้านบน */
+    transition: background-color 0.3s ease; /* ทำให้การเปลี่ยนสีราบรื่นขึ้น */
+    /* เพิ่มเงาเล็กน้อยให้กับกล่องเพื่อให้ดูมีมิติ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* เพิ่มลูกเล่นเมื่อนำเมาส์ไปชี้ (Hover effect) */
+nav ul li a:hover , .doo a:hover , .project-item a:hover {
+    background-color: #5DADE2; /* เปลี่ยนสีพื้นหลังเมื่อนำเมาส์ไปชี้ */
+}
+
+/* ส่วนตกแต่งสำหรับเมนูนำทาง (Navigation) */
+nav ul {
+    /* ลบจุดนำหน้าของรายการ (bullets) */
+    list-style-type: none;
+    /* กำจัดระยะห่างเริ่มต้นด้านใน */
+    padding: 0;
+    /* กำจัดระยะห่างเริ่มต้นด้านนอก */
+    margin: 0;
+    /* ใช้ Flexbox เพื่อจัดเรียงรายการในแนวนอน */
+    display: flex;
+    /* จัดเรียงรายการให้ชิดซ้ายของ container */
+    justify-content: flex-start;
+    /*เพิ่มระยะห่างระหว่างปุ่ม*/
+    gap: 15px;
+    /* เพิ่มระยะห่างจากขอบซ้าย */
+    margin-left: 20px; /* สามารถปรับค่า 20px ได้ตามต้องการ */
+}
+
+nav li a {
+    /* กำจัดเส้นใต้ในลิงก์ */
+    text-decoration: none;
+    /* กำหนดสีลิงก์เป็นสีขาว */
+    color: #000;
+    /* กำหนดระยะห่างรอบลิงก์เพื่อไม่ให้ติดกัน */
+    padding: 0 15px;
+}
+
+/* กำหนดรูปแบบให้กับรูปโปรไฟล์ที่อยู่ใน section id="me" */
+#me img {
+    /* กำหนดขนาดความกว้างของรูปภาพ (ปรับตามต้องการ) */
+    width: 400px;
+    /* กำหนดขนาดความสูงของรูปภาพ (ปรับตามต้องการ) */
+    height: 400px;
+    /* ทำให้รูปภาพเป็นวงกลม */
+    border-radius: 50%;
+    /* ปรับให้รูปภาพเต็มกรอบวงกลมโดยไม่เสียสัดส่วน */
+    object-fit: cover;
+    /* เปลี่ยนให้ img เป็น block เพื่อให้จัดกึ่งกลางได้ */
+    display: block;
+    /* กำหนด margin ซ้ายขวาเป็น auto เพื่อจัดกึ่งกลาง */
+    margin: 0 auto;
+    /* ใส่ขอบสีดำ */
+    border: 10px solid #003C71; /* กำหนดขนาด 2 พิกเซล, เส้นทึบ (solid), และสีดำ (#000) */
+      /* เพิ่มเงาเล็กน้อยให้กับกล่องเพื่อให้ดูมีมิติ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ส่วนตกแต่งสำหรับเนื้อหาหลัก (Main Content) */
+main {
+    /* กำหนดสีตัวอักษรใน main เป็นสีดำ */
+    color: #000;
+    /* กำหนดระยะห่างภายใน (Padding) ด้านบนและล่าง */
+    padding: 1rem 0;
+}
+
+/* จัดรูปแบบปุ่มในส่วน Projects */
+#me a  {
+    display: inline-block; /* ทำให้ลิงก์มีลักษณะคล้ายปุ่ม */
+    background-color: #2980b9; /* กำหนดสีพื้นหลังของปุ่ม */
+    color: #fff; /* กำหนดสีตัวอักษรเป็นสีขาว */
+    padding: 10px 20px; /* กำหนดระยะห่างภายในปุ่ม */
+    border-radius: 5px; /* ทำให้มุมของปุ่มโค้งมน */
+    margin-top: 5px; /* เพิ่มระยะห่างด้านบน */
+    transition: background-color 0.3s ease; /* ทำให้การเปลี่ยนสีราบรื่นขึ้น */
+    /* เพิ่มเงาเล็กน้อยให้กับกล่องเพื่อให้ดูมีมิติ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* เพิ่มลูกเล่นเมื่อนำเมาส์ไปชี้ (Hover effect) */
+#me a:hover {
+    background-color: #5DADE2; /* เปลี่ยนสีพื้นหลังเมื่อนำเมาส์ไปชี้ */
+}    
+
+section a {
+    color: #000;
+}
+
+/* จัดกึ่งกลางเนื้อหาในแต่ละ section ที่มี id เหล่านี้ */
+#me, #about-me, #projects, #portfolio-list, #project-nanachad {
+    /* จัดข้อความและเนื้อหาให้อยู่ตรงกลาง */
+    text-align: center;
+}
+
+#me a{
+    margin-bottom: 40px;
+}
+/* กำหนดรูปแบบเฉพาะสำหรับปุ่ม "เลือกดูผลงานเลย" ในคลาส .doo */
+.doo a {
+    /* กำหนดให้เป็นปุ่มแบบบล็อก (เหมือนปุ่มอื่น ๆ) */
+    display: inline-block;
+    
+    /* เพิ่มขนาด Padding เพื่อให้ปุ่มดูใหญ่ขึ้น */
+    padding: 30px 45px; /* เพิ่ม Padding ทั้งแนวตั้งและแนวนอนให้มากขึ้น */
+    
+    /* คัดลอกคุณสมบัติพื้นฐานจากปุ่มอื่น ๆ (ถ้าคุณต้องการคงสไตล์เดิม) */
+    background-color: #2980b9; 
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 15px; 
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 1.2em;
+    
+}
+.doo{
+text-align: center;
+}
+
+/* เพิ่ม Hover Effect สำหรับปุ่มนี้ด้วย */
+.doo a:hover {
+    background-color: #5DADE2;
+}
+
+/* จัดรูปแบบรูปภาพในส่วนผลงานที่มี class="project-1images" */
+.project-1images, .projects-2images {
+    /* ใช้ Flexbox เพื่อจัดเรียงรูปภาพในแนวนอน */
+    display: flex;
+    /* กำหนดระยะห่างระหว่างรูปภาพ */
+    gap: 10px;
+    /* จัดรูปภาพให้อยู่ตรงกลาง (หากต้องการ) */
+    justify-content: center;
+}
+
+.project-1images img, .projects-2images img {
+    /* กำหนดความกว้างของแต่ละรูปภาพ */
+    width: 45%;
+    /* ทำให้รูปภาพเป็น Responsive และปรับขนาดตาม Container */
+    max-width: 100%;
+    /* กำหนดความสูงแบบอัตโนมัติเพื่อรักษาสัดส่วน */
+    height: auto;
+    /* ใส่ขอบสีดำ */
+    border: 2px solid #003C71; /* กำหนดขนาด 2 พิกเซล, เส้นทึบ (solid), และสีดำ (#000) */
+}
+
+/* จัดรูปแบบปุ่มในส่วน Projects */
+#projects article a,.project-item a {
+    display: inline-block; /* ทำให้ลิงก์มีลักษณะคล้ายปุ่ม */
+    background-color: #2980b9; /* กำหนดสีพื้นหลังของปุ่ม */
+    color: #fff; /* กำหนดสีตัวอักษรเป็นสีขาว */
+    padding: 10px 20px; /* กำหนดระยะห่างภายในปุ่ม */
+    border-radius: 5px; /* ทำให้มุมของปุ่มโค้งมน */
+    margin-bottom: 50px; /* เพิ่มระยะห่างด้านล่าง */
+    transition: background-color 0.3s ease; /* ทำให้การเปลี่ยนสีราบรื่นขึ้น */
+    /* เพิ่มเงาเล็กน้อยให้กับกล่องเพื่อให้ดูมีมิติ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* เพิ่มลูกเล่นเมื่อนำเมาส์ไปชี้ (Hover effect) */
+#projects article a:hover {
+    background-color: #5DADE2; /* เปลี่ยนสีพื้นหลังเมื่อนำเมาส์ไปชี้ */
+}
+
+/* ส่วนตกแต่งสำหรับส่วนท้ายของหน้าเว็บ (Footer) */
+footer {
+    /* กำหนดสีพื้นหลังของ Footer เป็นสีเทาเข้ม */
+    background: #003C71;
+    /* กำหนดสีตัวอักษรใน Footer เป็นสีขาว */
+    color: #fff;
+    /* กำหนดระยะห่างภายใน (Padding) ด้านบนและล่าง */
+    padding: 2rem 0;
+    /* จัดข้อความและเนื้อหาให้อยู่ตรงกลาง */
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    padding: 2rem 0; /* เพิ่มระยะห่างด้านบนและล่างให้มากขึ้น */
+    text-align: center;
+    gap: 0px; /* เพิ่มระยะห่างระหว่างรายการในเมนู Footer */
+}
+
+/* จัดกลุ่มการตกแต่งลิงก์ที่ซ้ำกัน (ยกเว้น nav) */
+section a,
+footer a {
+    /* กำจัดเส้นใต้ในลิงก์ */
+    text-decoration: none;
+    /* กำหนดระยะห่างรอบลิงก์ */
+    padding: 0 15px;
+}
+
+/* จัดรูปแบบรายการ (ul) ใน footer */
+footer ul {
+    /* ลบจุดนำหน้าของรายการ */
+    list-style-type: none;
+    /* กำจัดระยะห่างเริ่มต้นด้านใน */
+    padding: 0;
+    /* กำจัดระยะห่างเริ่มต้นด้านนอก */
+    margin: 0;
+    /* ใช้ Flexbox เพื่อจัดเรียงรายการในแนวนอน */
+    display: flex;
+    /* จัดให้อยู่ตรงกลาง */
+    justify-content: center;
+    gap: 5px; /* เพิ่มระยะห่างระหว่างรายการในเมนู Footer */
+}
+
+/* จัดรูปแบบปุ่มสำหรับแยกประเภทผลงาน */
+.filter-buttons {
+    margin: 20px 0;
+    /* จัดปุ่มให้อยู่กึ่งกลาง */
+    text-align: center;
+}
+
+.filter-buttons a{
+    /* ทำให้แต่ละปุ่มขึ้นบรรทัดใหม่และครอบครองพื้นที่เต็มบรรทัด */
+    display: block; 
+    background-color: #009CDE;
+    color: #000;
+    padding: 10px 20px;
+    /* เพิ่มระยะห่างด้านล่างเพื่อให้ปุ่มไม่ติดกัน */
+    margin: 0 0 10px 0; 
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    /* เพิ่มเงาเล็กน้อยให้กับกล่องเพื่อให้ดูมีมิติ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* กำหนดรูปแบบให้กับรูปโปรไฟล์ที่อยู่ใน section id="portfolio-list" */
+#portfolio-list img {
+    /* กำหนดขนาดความกว้างของรูปภาพ (ปรับตามต้องการ) */
+    width: 400px;
+    /* กำหนดขนาดความสูงของรูปภาพ (ปรับตามต้องการ) */
+    height: 400px;
+    /* ทำให้รูปภาพเป็นวงกลม */
+    border-radius: 50%;
+    /* ปรับให้รูปภาพเต็มกรอบวงกลมโดยไม่เสียสัดส่วน */
+    object-fit: cover;
+    /* เปลี่ยนให้ img เป็น block เพื่อให้จัดกึ่งกลางได้ */
+    display: block;
+    /* กำหนด margin ซ้ายขวาเป็น auto เพื่อจัดกึ่งกลาง */
+    margin: 0 auto;
+    /* ใส่ขอบสีดำ */
+    border: 10px solid #003C71; /* กำหนดขนาด 2 พิกเซล, เส้นทึบ (solid), และสีดำ (#000) */
+}    
+
+ /* จัดรูปแบบรูปภาพและวิดีโอในส่วนผลงาน */
+.project-nanachadimages {
+    /* ใช้ Flexbox เพื่อจัดเรียงรูปภาพในแนวนอน */
+    display: flex;
+    /* กำหนดระยะห่างระหว่างรูปภาพ */
+    gap: 10px;
+    /* จัดรูปภาพให้อยู่ตรงกลาง */
+    justify-content: center;
+    /* ทำให้องค์ประกอบทั้งหมดขึ้นบรรทัดใหม่ */
+    flex-wrap: wrap; 
+    align-items: flex-end;
+}
+
+.project-nanachadimages img {
+    /* กำหนดความกว้างของแต่ละองค์ประกอบ */
+   width: 30%;
+    height: 60%; /* ความสูงมาตรฐาน */
+    object-fit: cover;
+    max-width: 90%;
+    border: 2px solid #003C71;
+}
+.project-nanachadimages img:nth-child(2) {
+    height: 50%; /* กำหนดให้สูงกว่ามาตรฐาน */
+    
+}
+
+.vidio1 iframe,video {
+    width: 750px ;
+    height: 425px;
+    border: 2px solid #003C71;
+    margin: 20px 0 0 0; 
+}
+
+/* จัดรูปแบบปุ่มสำหรับแยกประเภทผลงาน */
+.filter-buttons {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.filter-buttons a {
+    /* ทำให้แต่ละปุ่มขึ้นบรรทัดใหม่และครอบครองพื้นที่เต็มบรรทัด */
+    display: block; 
+    background-color: #2980b9; 
+    color: #fff;
+    padding: 10px 20px;
+    /* เพิ่มระยะห่างด้านล่างเพื่อให้ปุ่มไม่ติดกัน */
+    margin: 0 auto 10px auto; 
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    max-width: 300px; /* กำหนดความกว้างสูงสุดของปุ่ม */
+}
